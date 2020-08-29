@@ -12,6 +12,7 @@
 /build
 
 /src/libs/*/lib
+/src/libs/*/node_modules
 
 # misc
 .DS_Store
