@@ -1,0 +1,10 @@
+query users {
+  getUsers {
+    id
+    fullName
+    idNumber
+    phone
+    email
+    verified
+  }
+}
