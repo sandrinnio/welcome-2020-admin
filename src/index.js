@@ -6,14 +6,14 @@ import UserIcon from '@material-ui/icons/Group';
 
 import * as serviceWorker from './serviceWorker';
 import { USER } from './resources';
-import { UserList } from './user';
+import { UserList, UserEdit } from './user';
 import { dataProvider } from './dataProvider';
 import apolloClient from './apollo';
 
 ReactDOM.render(
   <ApolloProvider client={apolloClient}>
     <Admin dataProvider={dataProvider}>
-      <Resource name={USER} icon={UserIcon} list={UserList} />
+      <Resource name={USER} icon={UserIcon} list={UserList} edit={UserEdit} />
     </Admin>
   </ApolloProvider>,
   document.getElementById('root'),

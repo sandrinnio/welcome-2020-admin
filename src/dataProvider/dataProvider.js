@@ -21,5 +21,13 @@ export const dataProvider = {
       default:
         return { data: [], total: 0 };
     }
+  },
+  getOne: (resource, params) => {
+    switch (resource) {
+      case USER:
+        return userProvider.getOne(params)
+      default:
+        return { data: [] }
+    }
   }
 }
