@@ -29,5 +29,13 @@ export const dataProvider = {
       default:
         return { data: [] }
     }
+  },
+  update: (resource, params) => {
+    switch (resource) {
+      case USER:
+        return userProvider.update(params)
+      default:
+        return { data: params.previousData }
+    }
   }
 }

@@ -16,6 +16,7 @@ export const UserList = props => (
       <TextField source="idNumber" />
       <TextField source="phone" />
       <BooleanField source="verified" />
+      <BooleanField source="paid" />
       <EditButton />
     </Datagrid>
   </List>
